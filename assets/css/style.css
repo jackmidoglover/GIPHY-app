@@ -1,0 +1,23 @@
+.results {
+    width: 1000px;
+    height: auto;
+    float: left;
+    clear: both;
+}
+#buttons{
+    width: 100%;
+}
+.input {
+    width: 200px;
+    float: right;
+}
+header {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+.card {
+    overflow-x: auto;
+    float: left;
+}
+
