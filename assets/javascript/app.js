@@ -58,7 +58,7 @@ function displayGif() {
         var rating = response.data[i].rating;
         var info = $("<div>")
         .addClass("info").html(`<p> Rating : ${rating} </p> 
-                                <p> Title : ${title}</p> `);
+                                <p> Title : ${title} </p> `);
         
         var fave = $("<button>");
         fave.addClass("fave");
@@ -141,13 +141,16 @@ function displayFavorites() {
     $(".card").css("z-index", "-1");
 
     for (i = 0; i < faveStills.length; i++) {
+        var fave = $("<div>")
+        .addClass("frame");
         var img = $("<img>")
         img.addClass("faveGif")
         .attr("src", faveStills[i])
         .attr("anim-url", faveAnim[i])
         .attr("still-url", faveStills[i])
         .attr("isplaying", 'false');
-        $("#fave-gifs").prepend(img);
+        $(fave).append(img);
+        $("#fave-gifs").prepend(fave);
         console.log("works");
     }
     // make still gifs in favorite animate
