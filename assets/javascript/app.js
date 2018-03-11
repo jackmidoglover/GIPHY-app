@@ -34,7 +34,7 @@ function favoritesLoad() {
 //primary function, calls GIPHY API and prints object info into cards
 function displayGif() {
     var clickCounter = $(this).attr("data-clicks") * 10;
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +($(this).text()) + 
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +($(this).text()) + 
     "&api_key=RHU8RTWjz03OnbYZmFKuhxayNxH2njsY&limit=10&offset=" + clickCounter;
     
     $.ajax ({
