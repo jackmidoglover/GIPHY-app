@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Source+Sans+Pro" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
-    <title>Document</title>
+    <title>Doggie Gif Finder</title>
 </head>
 <body>
     <header>
-    This is a giphy app
+    <h1>Doggie GIF Finder</h1>
     </header>
     <main>
-        <div id="buttons">
-
+        <div id= "bar">
+            <div id="buttons">
+            </div>
+            <div class="userInputs">
+                <button id="faveWindow"><i class="far fa-heart"></i> Favorites</button>
+                <div class="input"> 
+                    <form id="gif-form">
+                        <label for="gif-search">Search for a dog gif</label>
+                        <br>
+                        <input type="text" id="gif-search">
+                        <button for="gif-search" id="find-gif" type="submit" value="Gif Search">Search!</button>
+                        </form>  
+                </div>  
+            </div>
         </div>
+
         <div class="results">
             
         </div>
-        <div class="input"> 
-        <form id="gif-form">
-           <label for="gif-search">Search for a dog GIF</label>
-            <br>
-            <input type="text" id="gif-search">
-            <button for="gif-search" id="find-gif" type="submit" value="Gif Search">Search!</button>
-        </form>    
+        <div class="favorites">
+            <h2>Favorites</h2>
+            <button class="close"> Close </button>
+            <div id="fave-gifs">
+
+            </div>
         </div>
+        
     </main>
 </body>
 </html>
