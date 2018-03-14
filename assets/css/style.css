@@ -140,12 +140,7 @@ h2 {
   and (min-device-width: 414px) 
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2) {
-h1 {
-    width: 60%;
-}
-header {
-    font-size: 50px;
-}
+
 html {
     max-width: 100%;
 }
@@ -153,8 +148,6 @@ html {
     width: 100%;
     float: left;
 }
-#bar {
-    width: 80%;
-}
+
 
 }
