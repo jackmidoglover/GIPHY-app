@@ -124,7 +124,7 @@ $("#find-gif").on("click", function(event){
     dogs.push(doggif);
     console.log(dogs);
     buttons();
-    $("#find-gif").val(" ");
+    $("#gif-search").val(" ");
 });
 
 // Makes topic buttons retrieve list of gifs

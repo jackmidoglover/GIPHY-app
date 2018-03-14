@@ -1,8 +1,7 @@
 html {
     min-height: 100%;
-}
+} 
 body {
-    min-height: 100%;
     height: auto;
     background: linear-gradient(to bottom left, #C20EFF, #E80C7A, #FF2200, #E8670C, #FFA900);
     font-family: 'Source Sans Pro', sans-serif;
@@ -138,12 +137,24 @@ h2 {
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2) {
+h1 {
+    width: 60%;
+}
+header {
+    font-size: 50px;
+}
+html {
+    max-width: 100%;
+}
 .userInputs {
     width: 100%;
     float: left;
+}
+#bar {
+    width: 80%;
 }
 
 }
