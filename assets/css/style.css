@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     min-height: 100%;
 } 
@@ -101,7 +104,7 @@ a {
     box-shadow: 5px 8px 10px #270052;
     border: 4px solid #E8670C;
     width: 80%;
-    height: 500px;
+    height: 80%;
     visibility: hidden;
     position: fixed;
     top: 12%;
@@ -142,12 +145,191 @@ h2 {
   and (-webkit-min-device-pixel-ratio: 2) {
 
 html {
-    max-width: 100%;
+    min-width: 100%;
+}
+#buttons {
+    display: block;
+    width: 100%;
 }
 .userInputs {
     width: 100%;
     float: left;
+    display: block;
+    background-color: indigo;
+    border-top: 3px solid #ffffff;
+}
+#faveWindow {
+    display: block;
+    float: right;
+    width: 125px;
+    margin: 5px auto;
+    background-color: #E80C7A;
+    border: 1px solid #FF2200;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+}
+#bar {
+padding: 0;
+}
+#find-gif {
+    display: inline-block;
+    position: relative;
+    left: -22px;
+    padding: 0;
+}
+#gif-form {
+    display: inline-block;
+    position: relative;
+    left: 10px;
 }
 
+h2 {
+    font-size: 58px;
+}
+
+.close {
+    position: absolute;
+    left: 95%;
+}
+}
+@media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+html {
+    min-width: 100%;
+}
+#buttons {
+    display: block;
+    width: 100%;
+}
+.userInputs {
+    width: 100%;
+    float: left;
+    display: block;
+    background-color: indigo;
+    border-top: 3px solid #ffffff;
+}
+#faveWindow {
+    display: block;
+    float: right;
+    width: 125px;
+    margin: 5px auto;
+    background-color: #E80C7A;
+    border: 1px solid #FF2200;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+}
+#bar {
+padding: 0;
+}
+#find-gif {
+    display: inline-block;
+    position: relative;
+    left: -22px;
+    padding: 0;
+}
+#gif-form {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+}
+h2 {
+    font-size: 58px;
+}
+.close {
+    position: absolute;
+    left: 95%;
+}
+    }
+ @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+html {
+    min-width: 100%;
+}
+#buttons {
+    display: block;
+    width: 100%;
+}
+.userInputs {
+    width: 100%;
+    float: left;
+    display: block;
+    background-color: indigo;
+    border-top: 3px solid #ffffff;
+}
+#faveWindow {
+    display: block;
+    float: right;
+    width: 125px;
+    margin: 5px auto;
+    background-color: #E80C7A;
+    border: 1px solid #FF2200;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+}
+#bar {
+padding: 0;
+}
+#find-gif {
+    display: inline-block;
+    position: relative;
+    left: -22px;
+    padding: 0;
+}
+#gif-form {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+}        
+h2 {
+    font-size: 58px;
+}   
+.close {
+    position: absolute;
+    left: 97%;
+}
+}
+@media only screen  and (min-width : 1824px) {
+
+html {
+    min-height: 102%;
+    min-width: 102%;
+}
+
+header {
+    font-size: 120px;
+}
+#gif-form {
+    position: absolute;
+    left: -76px;
+}
+
+#faveWindow {
+    position: absolute;
+    left: 28%;
+}
+
+#buttons {
+    display: block;
+    float: none;
+    width: 58%;
+    margin: 0 auto;
+}
+.userInputs {
+    position: absolute;
+    display: block;
+    top: 7%;
+    left: 87%;
+}
+
+.close {
+    position: absolute;
+    left: 99%;
+}
 
 }
+            
